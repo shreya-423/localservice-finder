@@ -37,38 +37,6 @@ The project allows providers to register, log in, and manage their service listi
 - **Git & GitHub** for version control  
 - **VS Code / IntelliJ IDEA** for development  
 
----
-
-## 🗂️ Project Structure
-localservice finder/
-│
-├── localservicefinder/ # Backend (Spring Boot)
-
-│ ├── src/main/java/com/example/localservicefinder
-
-│ │ ├── controller/ # REST Controllers
-│ │ ├── dto/ # Data Transfer Objects
-│ │ ├── entity/ # Database Entities
-│ │ ├── repository/ # JPA Repositories
-│ │ ├── service/ # Service Logic
-│ │ └── LocalServiceFinderApplication.java
-
-│ ├── src/main/resources/
-│ │ ├── application.properties # MySQL configuration
-
-│ └── pom.xml
-│
-├── localservicefinder-frontend/ # Frontend (React)
-
-│ ├── src/
-│ │ ├── App.js # Main component
-│ │ ├── Services/api.js # API calls
-│ │ └── index.js
-
-│ ├── package.json
-
-│ └── public/
-
 ## ⚙️ Installation & Setup Guide
 
 ### 🔧 Backend (Spring Boot)
