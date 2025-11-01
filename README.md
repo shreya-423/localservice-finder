@@ -43,23 +43,30 @@ The project allows providers to register, log in, and manage their service listi
 localservice finder/
 │
 ├── localservicefinder/ # Backend (Spring Boot)
+
 │ ├── src/main/java/com/example/localservicefinder
+
 │ │ ├── controller/ # REST Controllers
 │ │ ├── dto/ # Data Transfer Objects
 │ │ ├── entity/ # Database Entities
 │ │ ├── repository/ # JPA Repositories
 │ │ ├── service/ # Service Logic
 │ │ └── LocalServiceFinderApplication.java
+
 │ ├── src/main/resources/
 │ │ ├── application.properties # MySQL configuration
+
 │ └── pom.xml
 │
 ├── localservicefinder-frontend/ # Frontend (React)
+
 │ ├── src/
 │ │ ├── App.js # Main component
 │ │ ├── Services/api.js # API calls
 │ │ └── index.js
+
 │ ├── package.json
+
 │ └── public/
 
 ## ⚙️ Installation & Setup Guide
@@ -68,13 +75,18 @@ localservice finder/
 
 1. Open your backend folder:
    cd localservicefinder
+
 Configure your MySQL database in src/main/resources/application.properties:
+
 properties
+
 spring.datasource.url=jdbc:mysql://localhost:3306/localservicefinder
+
 spring.datasource.username=root
 spring.datasource.password=yourpassword
 spring.jpa.hibernate.ddl-auto=update
 jwt.secret=yourSecretKey
+
 Build and run the project:
 mvn spring-boot:run
 Backend will start on:
